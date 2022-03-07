@@ -7,12 +7,12 @@ using System.Text;
 
 namespace DevFreela.Infrastructure.Persistence.Configurations
 {
-    internal class SkillConfigurations : IEntityTypeConfiguration<User>
+    public class SkillConfigurations : IEntityTypeConfiguration<Skill>
     {
-        public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<Skill> builder)
         {
             builder
-               .HasKey(s => s.Id);
+                .HasKey(s => s.Id);
         }
     }
 }
